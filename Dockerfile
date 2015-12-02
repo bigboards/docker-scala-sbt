@@ -18,8 +18,7 @@ RUN \
   dpkg -i sbt-$SBT_VERSION.deb && \
   rm sbt-$SBT_VERSION.deb && \
   apt-get update && \
-  apt-get install sbt && \
-  apt-get clean
+  apt-get install sbt
 
 # Define working directory
 WORKDIR /root
